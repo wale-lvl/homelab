@@ -5,7 +5,6 @@ This lab uses a VirtualBox NAT Network to provide controlled internal communicat
 All virtual machines are connected to the same NAT Network to simulate a small internal enterprise environment.
 
 ## Network Mode Selection
-
 **Network Mode:** NAT Network 
 **Network Name:** Null
 
@@ -17,20 +16,30 @@ The NAT Network mode was selected to:
 This design balances usability and security for an isolated home lab.
 
 ## Virtual Machine Network Configuration
-
 All virtual machines share identical network settings:
 
 - Adapter: 1
 - Attached to: NAT Network
 - NAT Network Name: Null
 
-### Connected Systems
+## Network Configuration Evidence
+The following screenshots document the VirtualBox network configuration for each system:
+
+- Kali Linux NAT Network configuration
+- Ubuntu NAT Network configuration
+- Windows 10 Enterprise NAT Network configuration
+
+These screenshots confirm that all systems are connected to the same NAT Network (`Null`) using Adapter 1.
+![Kali NAT Network](../screenshots/network/kali-nat-network.png)
+![Ubuntu NAT Network](../screenshots/network/ubuntu-nat-network.png)
+![Windows 10 NAT Network](../screenshots/network/windows10-nat-network.png)
+
+## Connected Systems
 - Kali Linux (Attack & Security Testing)
 - Ubuntu (Server / Services / Attack & Security Testing)
 - Windows 10 Enterprise (Endpoint / Defense)
 
 ## Communication Flow
-
 - VM ↔ VM communication: **Allowed**
 - VM → Internet: **Allowed**
 - Internet → VM: **Blocked by default**
@@ -39,7 +48,6 @@ All virtual machines share identical network settings:
 This ensures a controlled environment suitable for offensive and defensive security testing.
 
 ## Security Considerations
-
 - NAT Network provides basic isolation from external threats
 - No services are exposed publicly
 - Suitable for malware analysis, penetration testing practice, and monitoring exercises
