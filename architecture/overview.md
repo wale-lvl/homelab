@@ -1,19 +1,19 @@
 ## Overview
 
-This project documents the design and implementation of a virtualized cybersecurity homelab built using VirtualBox.
+This project documents the design and implementation of a virtualized homelab built using VirtualBox.
 
 The lab consists of:
-- Kali Linux (attacker / testing machine)
-- Ubuntu Linux (server / attacker / testing machine)
-- Windows 10 Enterprise (endpoint)
+- Kali Linux
+- Ubuntu Linux
+- Windows 10 Enterprise
 
 All systems are connected through an isolated NAT Network to simulate a small enterprise environment.
 
 ## Objectives
 
 - Learn virtualization and network design
-- Practice ethical hacking techniques
-- Understand attacker and defender perspectives
+- Operating System installation and configuration
+- Troubleshooting common technical issues
 
 ## Repository Structure
 
