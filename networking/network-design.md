@@ -35,9 +35,9 @@ These screenshots confirm that all systems are connected to the same NAT Network
 ![Windows 10 NAT Network](../assets/windows10-nat-network.png)
 
 ## Connected Systems
-- Kali Linux (Attack & Security Testing)
-- Ubuntu (Server / Services / Attack & Security Testing)
-- Windows 10 Enterprise (Endpoint / Defense)
+- Kali Linux
+- Ubuntu 
+- Windows 10 Enterprise
 
 ## Communication Flow
 - VM ↔ VM communication: **Allowed**
@@ -45,9 +45,7 @@ These screenshots confirm that all systems are connected to the same NAT Network
 - Internet → VM: **Blocked by default**
 - Host ↔ VM: **Allowed**
 
-This ensures a controlled environment suitable for offensive and defensive security testing.
-
+This ensures a controlled environment suitable for troubleshooting and analysis
 ## Security Considerations
 - NAT Network provides basic isolation from external threats
 - No services are exposed publicly
-- Suitable for malware analysis, penetration testing practice, and monitoring exercises
