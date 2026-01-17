@@ -2,7 +2,7 @@
 
 This repository documents a comprehensive virtualized IT support environment built using Oracle VirtualBox to simulate real-world enterprise infrastructure.
 
-## 🛠 Lab Environment
+## Lab Environment
 * *Hypervisor:* VirtualBox 7.1.10
 * *Infrastructure:* * Windows Server 2022 (Domain Controller)
     * Windows 10 Enterprise (Workstation)
