@@ -2,7 +2,7 @@
 
 ## Overview
 
-This section documents a hands-on Active Directory home lab built to simulate real-world Help Desk and junior IT support tasks. The lab focuses on user account management, domain authentication, basic troubleshooting, and patch management.
+This section documents my hands-on Active Directory home lab built to simulate real-world Help Desk support tasks. The lab focuses on user account management, domain authentication, basic troubleshooting, and patch management.
 
 ## Lab Environment
 
@@ -14,15 +14,6 @@ This section documents a hands-on Active Directory home lab built to simulate re
 ### Virtual Machines
 - Windows Server 2022 (Domain Controller)
 - Windows 11 Pro N (Domain-joined client)
-
-## Key Skills Demonstrated
-
-- Active Directory Domain Services (AD DS) installation
-- Domain creation and configuration
-- User account creation and management
-- Account lockout and unlock troubleshooting
-- Domain join and user authentication
-- Basic patch management using Action1
 
 ## Documentation Sections
 
