@@ -1,7 +1,7 @@
 # VirtualBox Installation
 
 ## Objective
-Install Oracle VirtualBox on the host machine to provide the virtualization platform for all lab virtual machines.
+Install Oracle VirtualBox on host machine to provide the virtualization platform for all lab virtual machines.
 
 ## VirtualBox Version
 - Version installed: **7.1.10r169112**
@@ -10,7 +10,7 @@ Install Oracle VirtualBox on the host machine to provide the virtualization plat
 
 1. Download VirtualBox from the official website (virtualbox.org).
 2. Run the installer and follow the standard installation wizard.
-3. Accept default options unless specific customizations are needed.
+3. Accept default options.
 4. After installation, install the **VirtualBox Extension Pack** matching the exact version.
    - This enables enhanced features including USB support and improved networking.
 
