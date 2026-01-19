@@ -7,7 +7,7 @@ Ubuntu is used as a **server system** in the lab to host services that can be te
 ## Installation Summary
 
 1. In VirtualBox, create a new VM named `Ubuntu-Lab`.
-2. Allocate appropriate resources (2–4 GB RAM, 20+ GB disk).
+2. Allocate appropriate resources (3 GB RAM, 20+ GB disk).
 3. Attach the Ubuntu ISO.
 4. Boot and follow the Ubuntu installer:
    - Disk configuration
