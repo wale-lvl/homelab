@@ -8,7 +8,7 @@ Kali Linux is the primary **security testing and penetration testing** operating
 
 1. Start VirtualBox and create a new VM named `Kali Linux`.
 2. Set the type to **Linux** and version to Debian 64-bit.
-3. Allocate at least 2–4 GB RAM and at least 20 GB storage.
+3. Allocate at least 2 GB RAM and at least 20 GB storage.
 4. Attach the Kali Linux ISO as a virtual optical drive.
 5. Boot the VM and follow the standard installer prompts:
    - Select language and keyboard
