@@ -18,7 +18,7 @@ Windows 10 Enterprise serves as a **target endpoint** in the lab environment. It
 ## Network Configuration
 
 - Adapter 1 → NAT Network (`Null`)
-- Ensures internet access and communication with other lab VMs
+- Ensures internet access and communication with other VMs
 
 ## Role in Lab
 
