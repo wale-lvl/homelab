@@ -1,4 +1,4 @@
-# Active Directory Home Lab (Windows Server 2022)
+# Active Directory
 
 This section documents my hands-on Active Directory home lab built to simulate real-world Help Desk support tasks. The lab focuses on user account management, domain authentication, basic troubleshooting, and patch management.
 
