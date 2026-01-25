@@ -1,4 +1,4 @@
-# Internal Network Configuration
+# Internal Network Config
 
 ## Overview
 
@@ -6,7 +6,7 @@ All virtual machines in this lab are connected using a VirtualBox NAT Network na
 
 This internal network allows:
 - Communication between Kali, Ubuntu, and Windows VMs
-- Internet access for updates and package installation
+- Internet access
 - Network isolation from the host’s physical LAN
 
 ## Network Design Summary
