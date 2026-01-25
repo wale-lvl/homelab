@@ -7,7 +7,7 @@ The lab consists of:
 - Ubuntu Linux
 - Windows 10 Enterprise
 
-All systems are connected through an isolated NAT Network to simulate a small enterprise environment.
+All systems are connected through an isolated NAT Network (Null) to simulate a small enterprise environment.
 
 ## Objectives
 
