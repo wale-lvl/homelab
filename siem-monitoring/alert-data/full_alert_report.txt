@@ -1,0 +1,297 @@
+
+============================================================
+  WAZUH ALERT REPORT — 2026-05-02 21:40:34
+  Analyst : Ayowale Ogunnola
+  Agents  : wale, WINDOWS-AGENT
+  Total   : 85 events parsed
+============================================================
+
+  SEVERITY BREAKDOWN:
+    Level  7 [MEDIUM  ] ███ 3
+    Level  5 [LOW     ] ██████████████ 14
+    Level  4 [LOW     ] █████████████████ 17
+    Level  3 [INFO    ] █████████████████████████ 51
+
+  EVENT CATEGORIES:
+    other                     53 events
+    privilege_escalation      11 events
+    fim                       9 events
+    brute_force               6 events
+    agent_tampering           4 events
+    log_clearing              1 events
+    lateral_movement          1 events
+
+  ───────────────────────────────────────────────────────
+  [6] BRUTE FORCE / AUTH FAILURES
+  ───────────────────────────────────────────────────────
+  timestamp   : 2026-05-02T00:00:05.404+0000
+  agent       : WINDOWS-AGENT
+  rule_id     : 60122
+  level       : 5
+  desc        : Logon Failure - Unknown user or bad password
+  mitre       : Impact — Account Access Removal
+
+  timestamp   : 2026-05-02T00:04:10.520+0000
+  agent       : WINDOWS-AGENT
+  rule_id     : 60122
+  level       : 5
+  desc        : Logon Failure - Unknown user or bad password
+  mitre       : Impact — Account Access Removal
+
+  timestamp   : 2026-05-02T00:04:11.684+0000
+  agent       : WINDOWS-AGENT
+  rule_id     : 60122
+  level       : 5
+  desc        : Logon Failure - Unknown user or bad password
+  mitre       : Impact — Account Access Removal
+
+  timestamp   : 2026-05-02T00:04:12.690+0000
+  agent       : WINDOWS-AGENT
+  rule_id     : 60122
+  level       : 5
+  desc        : Logon Failure - Unknown user or bad password
+  mitre       : Impact — Account Access Removal
+
+  timestamp   : 2026-05-02T00:04:13.697+0000
+  agent       : WINDOWS-AGENT
+  rule_id     : 60122
+  level       : 5
+  desc        : Logon Failure - Unknown user or bad password
+  mitre       : Impact — Account Access Removal
+
+  timestamp   : 2026-05-02T00:04:14.702+0000
+  agent       : WINDOWS-AGENT
+  rule_id     : 60122
+  level       : 5
+  desc        : Logon Failure - Unknown user or bad password
+  mitre       : Impact — Account Access Removal
+
+
+  ───────────────────────────────────────────────────────
+  [1] LOG CLEARING — DEFENSE EVASION
+  ───────────────────────────────────────────────────────
+  timestamp   : 2026-05-02T00:07:56.803+0000
+  agent       : WINDOWS-AGENT
+  rule_id     : 63104
+  level       : 5
+  desc        : A Windows log file was cleared
+  mitre       : Defense Evasion — Indicator Removal
+
+
+  ───────────────────────────────────────────────────────
+  [1] LATERAL MOVEMENT (SSH)
+  ───────────────────────────────────────────────────────
+  timestamp   : 2026-05-02T08:34:07.518+0000
+  agent       : wale
+  rule_id     : 5715
+  level       : 3
+  desc        : sshd: authentication success.
+  full_log    : May 02 08:34:07 wale sshd-session[11383]: Accepted password for wale from 172.20.10.2 port 51624 ssh2
+  mitre       : Initial Access — Valid Accounts
+  mitre       : Lateral Movement — Remote Services
+
+
+  ───────────────────────────────────────────────────────
+  [4] AGENT STOP/START — POSSIBLE TAMPERING
+  ───────────────────────────────────────────────────────
+  timestamp   : 2026-05-02T08:36:49.823+0000
+  agent       : WINDOWS-AGENT
+  rule_id     : 506
+  level       : 3
+  desc        : Wazuh agent stopped.
+  mitre       : Defense Evasion — Disable or Modify Tools
+
+  timestamp   : 2026-05-02T08:36:50.591+0000
+  agent       : WINDOWS-AGENT
+  rule_id     : 503
+  level       : 3
+  desc        : Wazuh agent started.
+
+  timestamp   : 2026-05-02T08:37:24.986+0000
+  agent       : WINDOWS-AGENT
+  rule_id     : 506
+  level       : 3
+  desc        : Wazuh agent stopped.
+  mitre       : Defense Evasion — Disable or Modify Tools
+
+  timestamp   : 2026-05-02T08:37:25.806+0000
+  agent       : WINDOWS-AGENT
+  rule_id     : 503
+  level       : 3
+  desc        : Wazuh agent started.
+
+
+  ───────────────────────────────────────────────────────
+  [11] PRIVILEGE ESCALATION (SUDO)
+  ───────────────────────────────────────────────────────
+  timestamp   : 2026-05-02T00:00:09.981+0000
+  agent       : WINDOWS-AGENT
+  rule_id     : 67028
+  level       : 3
+  desc        : Special privileges assigned to new logon.
+  mitre       : Privilege Escalation — Domain Policy Modification
+
+  timestamp   : 2026-05-02T00:14:41.823+0000
+  agent       : wale
+  rule_id     : 5402
+  level       : 3
+  desc        : Successful sudo to ROOT executed.
+  mitre       : Privilege Escalation — Sudo
+
+  timestamp   : 2026-05-02T00:15:05.877+0000
+  agent       : wale
+  rule_id     : 5402
+  level       : 3
+  desc        : Successful sudo to ROOT executed.
+  mitre       : Privilege Escalation — Sudo
+
+  timestamp   : 2026-05-02T00:25:32.775+0000
+  agent       : wale
+  rule_id     : 5402
+  level       : 3
+  desc        : Successful sudo to ROOT executed.
+  mitre       : Privilege Escalation — Sudo
+
+  timestamp   : 2026-05-02T08:33:11.604+0000
+  agent       : WINDOWS-AGENT
+  rule_id     : 67028
+  level       : 3
+  desc        : Special privileges assigned to new logon.
+  mitre       : Privilege Escalation — Domain Policy Modification
+
+  timestamp   : 2026-05-02T08:34:53.681+0000
+  agent       : wale
+  rule_id     : 5402
+  level       : 3
+  desc        : Successful sudo to ROOT executed.
+  mitre       : Privilege Escalation — Sudo
+
+  timestamp   : 2026-05-02T08:41:29.536+0000
+  agent       : wale
+  rule_id     : 5402
+  level       : 3
+  desc        : Successful sudo to ROOT executed.
+  mitre       : Privilege Escalation — Sudo
+
+  timestamp   : 2026-05-02T08:42:21.646+0000
+  agent       : wale
+  rule_id     : 5402
+  level       : 3
+  desc        : Successful sudo to ROOT executed.
+  mitre       : Privilege Escalation — Sudo
+
+  timestamp   : 2026-05-02T08:43:09.713+0000
+  agent       : wale
+  rule_id     : 5402
+  level       : 3
+  desc        : Successful sudo to ROOT executed.
+  mitre       : Privilege Escalation — Sudo
+
+  timestamp   : 2026-05-02T08:43:45.813+0000
+  agent       : wale
+  rule_id     : 5402
+  level       : 3
+  desc        : Successful sudo to ROOT executed.
+  mitre       : Privilege Escalation — Sudo
+
+  timestamp   : 2026-05-02T08:43:45.813+0000
+  agent       : wale
+  rule_id     : 5402
+  level       : 3
+  desc        : Successful sudo to ROOT executed.
+  mitre       : Privilege Escalation — Sudo
+
+
+  ───────────────────────────────────────────────────────
+  [9] FILE INTEGRITY MONITORING
+  ───────────────────────────────────────────────────────
+  timestamp   : 2026-05-02T00:25:51.824+0000
+  agent       : WINDOWS-AGENT
+  rule_id     : 554
+  level       : 5
+  desc        : File added to the system.
+  path        : c:\users\null\downloads\wazuh-test\new text document.txt
+  event       : added
+
+  timestamp   : 2026-05-02T00:26:12.188+0000
+  agent       : WINDOWS-AGENT
+  rule_id     : 553
+  level       : 7
+  desc        : File deleted.
+  path        : c:\users\null\downloads\wazuh-test\new text document.txt
+  event       : deleted
+  mitre       : Defense Evasion — File Deletion
+  mitre       : Impact — Data Destruction
+
+  timestamp   : 2026-05-02T00:26:12.228+0000
+  agent       : WINDOWS-AGENT
+  rule_id     : 554
+  level       : 5
+  desc        : File added to the system.
+  path        : c:\users\null\downloads\wazuh-test\cheatcode.txt
+  event       : added
+
+  timestamp   : 2026-05-02T00:26:13.868+0000
+  agent       : WINDOWS-AGENT
+  rule_id     : 553
+  level       : 7
+  desc        : File deleted.
+  path        : c:\users\null\downloads\wazuh-test\cheatcode.txt
+  event       : deleted
+  mitre       : Defense Evasion — File Deletion
+  mitre       : Impact — Data Destruction
+
+  timestamp   : 2026-05-02T08:38:58.898+0000
+  agent       : WINDOWS-AGENT
+  rule_id     : 554
+  level       : 5
+  desc        : File added to the system.
+  path        : c:\users\null\downloads\wazuh-test\hosts_backup.txt
+  event       : added
+  ⚠ FLAG      : suspicious filename detected
+
+  timestamp   : 2026-05-02T08:47:41.766+0000
+  agent       : WINDOWS-AGENT
+  rule_id     : 554
+  level       : 5
+  desc        : File added to the system.
+  path        : c:\users\null\downloads\wazuh-test\invoice_march.docx
+  event       : added
+  ⚠ FLAG      : suspicious filename detected
+
+  timestamp   : 2026-05-02T08:47:54.865+0000
+  agent       : WINDOWS-AGENT
+  rule_id     : 550
+  level       : 7
+  desc        : Integrity checksum changed.
+  path        : c:\users\null\downloads\wazuh-test\invoice_march.docx
+  event       : modified
+  mitre       : Impact — Stored Data Manipulation
+  md5_before  : d41d8cd98f00b204e9800998ecf8427e
+  md5_after   : 2fd90134cce20bda0dad41af0ab19769
+  virustotal  : https://virustotal.com/gui/file/2fd90134cce20bda0dad41af0ab19769
+  ⚠ FLAG      : suspicious filename detected
+
+  timestamp   : 2026-05-02T08:48:05.706+0000
+  agent       : WINDOWS-AGENT
+  rule_id     : 554
+  level       : 5
+  desc        : File added to the system.
+  path        : c:\users\null\downloads\wazuh-test\passwords_backup.txt
+  event       : added
+  ⚠ FLAG      : suspicious filename detected
+
+  timestamp   : 2026-05-02T08:48:19.156+0000
+  agent       : WINDOWS-AGENT
+  rule_id     : 554
+  level       : 5
+  desc        : File added to the system.
+  path        : c:\users\null\downloads\wazuh-test\svchost32.exe
+  event       : added
+  ⚠ FLAG      : suspicious filename detected
+
+
+============================================================
+  END OF REPORT
+============================================================
+
