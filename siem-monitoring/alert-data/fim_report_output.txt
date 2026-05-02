@@ -1,0 +1,25 @@
+
+============================================================
+  FIM ALERT REPORT — Generated 2026-05-02 08:55:18
+  Analyst: Ayowale Ogunnola
+============================================================
+
+  Total FIM events    : 9
+  High-risk path hits : 0
+
+  Event breakdown:
+    added        ██████ 6
+    deleted      ██ 2
+    modified     █ 1
+
+  Most active paths:
+    [2x]  c:\users\null\downloads\wazuh-test\new text document.txt
+    [2x]  c:\users\null\downloads\wazuh-test\cheatcode.txt
+    [2x]  c:\users\null\downloads\wazuh-test\invoice_march.docx
+    [1x]  c:\users\null\downloads\wazuh-test\hosts_backup.txt
+    [1x]  c:\users\null\downloads\wazuh-test\passwords_backup.txt
+
+  No high-risk path events detected.
+
+============================================================
+
