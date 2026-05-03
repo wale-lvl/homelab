@@ -5,6 +5,7 @@ Ayowale Ogunnola — SOC Homelab Project
 Analyzes PCAP files using tshark and flags suspicious network activity.
 """
 
+import shutil, os
 import subprocess
 import json
 import sys
@@ -198,7 +199,6 @@ def print_report(connections, ip_counts, port_counts,
 
 
 if __name__ == "__main__":
-    import shutil, os
     pcap = sys.argv[1] if len(sys.argv) > 1 else "capture.pcap"
     tmp  = f"/tmp/{os.path.basename(pcap)}"
     shutil.copy2(pcap, tmp)
