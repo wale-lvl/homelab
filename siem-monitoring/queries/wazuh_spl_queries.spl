@@ -1,0 +1,46 @@
+// ============================================================
+// Wazuh Alert SPL Queries
+// Analyst: Ayowale Ogunnola
+// Description: SOC investigation queries for Wazuh alert data
+// ============================================================
+
+
+// Query 1 — Brute Force Timeline
+// Shows failed login attempts with target usernames over time
+index=main sourcetype=_json rule.id=60122
+| table timestamp, agent.name, data.win.eventdata.targetUserName, rule.description
+| sort timestamp
+
+
+// Query 2 — Alert Severity Breakdown
+// Ranks all alert types by severity level
+index=main sourcetype=_json
+| stats count by rule.level, rule.description
+| sort -rule.level
+
+
+// Query 3 — MITRE ATT&CK Tactics Detected
+// Shows which attack tactics were observed across all alerts
+index=main sourcetype=_json rule.mitre.tactic{}=*
+| stats count by rule.mitre.tactic{}
+| sort -count
+
+
+// Query 4 — High Severity Alerts Only
+// Filters to actionable alerts level 5 and above
+index=main sourcetype=_json rule.level>=5
+| table timestamp, agent.name, rule.level, rule.description
+| sort -rule.level
+
+
+// Query 5 — Log Clearing Detection
+// Detects potential defense evasion via log tampering
+index=main sourcetype=_json rule.id=63104
+| table timestamp, agent.name, rule.description, location
+
+
+// Query 6 — FIM Suspicious Filenames
+// Detects file integrity events on monitored paths
+index=main sourcetype=_json rule.groups{}=syscheck
+| table timestamp, agent.name, syscheck.path, syscheck.event, rule.description
+| sort timestamp
