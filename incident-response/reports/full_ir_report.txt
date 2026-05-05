@@ -1,0 +1,185 @@
+
+============================================================
+  INCIDENT RESPONSE TRIAGE REPORT
+  Incident ID : INC-20260505-001
+  Generated   : 2026-05-05 20:21:32
+  Analyst     : Ayowale Ogunnola
+  Severity    : CRITICAL
+  Source file : /home/wale/fim_alerts_sample.json
+============================================================
+
+  AFFECTED SYSTEMS:
+    - WINDOWS-AGENT
+    - wale
+
+  THREAT SUMMARY:
+    Total events analysed : 85
+    Highest alert level   : 7
+    Threat categories     : 5
+      - Brute Force                    6 events
+      - Privilege Escalation           11 events
+      - Log Clearing                   1 events
+      - Fim Suspicious                 9 events
+      - Lateral Movement               1 events
+
+  ATTACK TIMELINE (key events only):
+  ───────────────────────────────────────────────────────
+  [2026-05-02T00:00:05] Level 5  | Logon Failure - Unknown user or bad password
+    MITRE : Impact
+
+  [2026-05-02T00:00:09] Level 3  | Special privileges assigned to new logon.
+    MITRE : Defense Evasion, Privilege Escalation
+
+  [2026-05-02T00:04:10] Level 5  | Logon Failure - Unknown user or bad password
+    MITRE : Impact
+
+  [2026-05-02T00:04:11] Level 5  | Logon Failure - Unknown user or bad password
+    MITRE : Impact
+
+  [2026-05-02T00:04:12] Level 5  | Logon Failure - Unknown user or bad password
+    MITRE : Impact
+
+  [2026-05-02T00:04:13] Level 5  | Logon Failure - Unknown user or bad password
+    MITRE : Impact
+
+  [2026-05-02T00:04:14] Level 5  | Logon Failure - Unknown user or bad password
+    MITRE : Impact
+
+  [2026-05-02T00:07:56] Level 5  | A Windows log file was cleared
+    MITRE : Defense Evasion
+
+  [2026-05-02T00:14:41] Level 3  | Successful sudo to ROOT executed.
+    MITRE : Privilege Escalation, Defense Evasion
+
+  [2026-05-02T00:15:05] Level 3  | Successful sudo to ROOT executed.
+    MITRE : Privilege Escalation, Defense Evasion
+
+  [2026-05-02T00:25:32] Level 3  | Successful sudo to ROOT executed.
+    MITRE : Privilege Escalation, Defense Evasion
+
+  [2026-05-02T00:25:51] Level 5  | File added to the system.
+    Path  : c:\users\null\downloads\wazuh-test\new text document.txt
+    MD5   : d41d8cd98f00b204e9800998ecf8427e
+    VT    : https://virustotal.com/gui/file/d41d8cd98f00b204e9800998ecf8427e
+    MITRE : N/A
+
+  [2026-05-02T00:26:12] Level 7  | File deleted.
+    Path  : c:\users\null\downloads\wazuh-test\new text document.txt
+    MD5   : d41d8cd98f00b204e9800998ecf8427e
+    VT    : https://virustotal.com/gui/file/d41d8cd98f00b204e9800998ecf8427e
+    MITRE : Defense Evasion, Impact
+
+  [2026-05-02T00:26:12] Level 5  | File added to the system.
+    Path  : c:\users\null\downloads\wazuh-test\cheatcode.txt
+    MD5   : d41d8cd98f00b204e9800998ecf8427e
+    VT    : https://virustotal.com/gui/file/d41d8cd98f00b204e9800998ecf8427e
+    MITRE : N/A
+
+  [2026-05-02T00:26:13] Level 7  | File deleted.
+    Path  : c:\users\null\downloads\wazuh-test\cheatcode.txt
+    MD5   : d41d8cd98f00b204e9800998ecf8427e
+    VT    : https://virustotal.com/gui/file/d41d8cd98f00b204e9800998ecf8427e
+    MITRE : Defense Evasion, Impact
+
+  [2026-05-02T08:33:11] Level 3  | Special privileges assigned to new logon.
+    MITRE : Defense Evasion, Privilege Escalation
+
+  [2026-05-02T08:34:07] Level 3  | sshd: authentication success.
+    MITRE : Defense Evasion, Persistence, Privilege Escalation, Initial Access, Lateral Movement
+
+  [2026-05-02T08:34:53] Level 3  | Successful sudo to ROOT executed.
+    MITRE : Privilege Escalation, Defense Evasion
+
+  [2026-05-02T08:38:58] Level 5  | File added to the system.
+    Path  : c:\users\null\downloads\wazuh-test\hosts_backup.txt
+    MD5   : 3688374325b992def12793500307566d
+    VT    : https://virustotal.com/gui/file/3688374325b992def12793500307566d
+    MITRE : N/A
+
+  [2026-05-02T08:41:29] Level 3  | Successful sudo to ROOT executed.
+    MITRE : Privilege Escalation, Defense Evasion
+
+  [2026-05-02T08:42:21] Level 3  | Successful sudo to ROOT executed.
+    MITRE : Privilege Escalation, Defense Evasion
+
+  [2026-05-02T08:43:09] Level 3  | Successful sudo to ROOT executed.
+    MITRE : Privilege Escalation, Defense Evasion
+
+  [2026-05-02T08:43:45] Level 3  | Successful sudo to ROOT executed.
+    MITRE : Privilege Escalation, Defense Evasion
+
+  [2026-05-02T08:43:45] Level 3  | Successful sudo to ROOT executed.
+    MITRE : Privilege Escalation, Defense Evasion
+
+  [2026-05-02T08:47:41] Level 5  | File added to the system.
+    Path  : c:\users\null\downloads\wazuh-test\invoice_march.docx
+    MD5   : d41d8cd98f00b204e9800998ecf8427e
+    VT    : https://virustotal.com/gui/file/d41d8cd98f00b204e9800998ecf8427e
+    MITRE : N/A
+
+  [2026-05-02T08:47:54] Level 7  | Integrity checksum changed.
+    Path  : c:\users\null\downloads\wazuh-test\invoice_march.docx
+    MD5   : 2fd90134cce20bda0dad41af0ab19769
+    VT    : https://virustotal.com/gui/file/2fd90134cce20bda0dad41af0ab19769
+    MITRE : Impact
+
+  [2026-05-02T08:48:05] Level 5  | File added to the system.
+    Path  : c:\users\null\downloads\wazuh-test\passwords_backup.txt
+    MD5   : d41d8cd98f00b204e9800998ecf8427e
+    VT    : https://virustotal.com/gui/file/d41d8cd98f00b204e9800998ecf8427e
+    MITRE : N/A
+
+  [2026-05-02T08:48:19] Level 5  | File added to the system.
+    Path  : c:\users\null\downloads\wazuh-test\svchost32.exe
+    MD5   : d41d8cd98f00b204e9800998ecf8427e
+    VT    : https://virustotal.com/gui/file/d41d8cd98f00b204e9800998ecf8427e
+    MITRE : N/A
+
+
+  RECOMMENDED RESPONSE ACTIONS:
+  ───────────────────────────────────────────────────────
+
+  [BRUTE FORCE]
+    1. Verify if targeted account exists in Active Directory
+    2. Check if any login eventually succeeded after failures
+    3. Block source IP at the firewall if external
+    4. Reset password for targeted account
+    5. Enable account lockout policy if not already set
+    6. Escalate to Tier 2 if more than 10 attempts detected
+
+  [PRIVILEGE ESCALATION]
+    1. Identify which account performed the escalation
+    2. Verify if sudo usage was expected for that account
+    3. Review commands executed with elevated privileges
+    4. Check if new accounts or SSH keys were created
+    5. Review /etc/sudoers for unauthorized modifications
+    6. Escalate if escalation was by a service account
+
+  [LOG CLEARING]
+    1. IMMEDIATELY preserve all remaining logs to external storage
+    2. Identify which process cleared the log (check Event ID 1102)
+    3. Correlate with other events 5 minutes before clearing
+    4. Assume breach — treat as active incident
+    5. Isolate endpoint from network pending investigation
+    6. Escalate to Tier 2 and notify incident response team
+
+  [FIM SUSPICIOUS]
+    1. Calculate MD5/SHA256 hash of flagged file
+    2. Submit hash to VirusTotal for reputation check
+    3. Check file creation time against user login events
+    4. Determine if file was executed (check Sysmon Event ID 1)
+    5. If executable — isolate endpoint immediately
+    6. Preserve file as forensic evidence before deletion
+
+  [LATERAL MOVEMENT]
+    1. Identify source and destination of SSH connection
+    2. Verify if connection was authorized
+    3. Check what commands were run in the SSH session
+    4. Review authentication logs for same source IP
+    5. If unauthorized — revoke SSH keys and reset credentials
+    6. Audit all systems the source IP has connected to
+
+============================================================
+  END OF TRIAGE REPORT — INC-20260505-001
+============================================================
+
