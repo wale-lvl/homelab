@@ -12,7 +12,7 @@ from datetime import datetime, timezone, timedelta
 from collections import defaultdict
 
 
-# ── High-risk API calls worth flagging ───────────────────────
+# High-risk API calls worth flagging
 SUSPICIOUS_EVENTS = {
     "ConsoleLogin"              : "Console login detected",
     "CreateUser"                : "New IAM user created",
