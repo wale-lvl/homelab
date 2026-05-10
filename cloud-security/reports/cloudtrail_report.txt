@@ -1,0 +1,67 @@
+  Fetching CloudTrail events for last 24 hours...
+
+============================================================
+  AWS CLOUDTRAIL SECURITY REPORT
+  Generated : 2026-05-10 11:53:08
+  Analyst   : Ayowale Ogunnola
+  Region    : eu-north-1
+  Window    : Last 24 hours
+============================================================
+
+  SUMMARY:
+    Total events analysed : 200
+    Root account events   : 1
+    No-MFA console logins : 0
+    Access denied errors  : 2
+    Suspicious API calls  : 0
+
+  TOP API CALLERS:
+    unknown                   █████████████████████████ 107
+    resource-explorer-2       █████████████████████████ 90
+    soc-analyst               ██ 2
+    root                      █ 1
+
+  TOP EVENT TYPES:
+    AssumeRole                               105
+    ListResources                            13
+    ListEnvironments                         6
+    ListDetectors                            5
+    DescribeSecurityGroupRules               5
+    GetBucketAcl                             2
+    ListDomains                              2
+    ListRepositories                         2
+
+  [!] ROOT ACCOUNT ACTIVITY (1 events):
+  ───────────────────────────────────────────────────────
+  Time     : 2026-05-10 11:36:53+00:00
+  Event    : DescribeRegions
+  Source   : ec2.amazonaws.com
+  IP       : 102.89.69.103
+  MFA      : false
+  ⚠ CRITICAL: Root login without MFA
+
+
+  [!] ACCESS DENIED EVENTS (2 total):
+  ───────────────────────────────────────────────────────
+  Time  : 2026-05-10 06:45:58+00:00
+  User  : resource-explorer-2
+  Event : ListPolicyStores
+  IP    : 13.51.87.127
+
+  Time  : 2026-05-10 05:53:09+00:00
+  User  : resource-explorer-2
+  Event : ListResources
+  IP    : resource-explorer-2.amazonaws.com
+
+
+  RECOMMENDED ACTIONS:
+  - Enable MFA on root account immediately
+  - Create IAM admin user for daily operations
+  - Lock root account access keys if any exist
+  - Review IAM policies for soc-analyst user
+  - Investigate source of unauthorized API calls
+
+============================================================
+  END OF REPORT
+============================================================
+
